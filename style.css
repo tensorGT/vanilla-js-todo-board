@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #eef2f7;
+  color: #1e293b;
+  line-height: 1.5;
+  padding-bottom: 48px;
+}
+
+.board-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #cbd5e1;
+  padding: 18px 24px;
+  display: flex;
