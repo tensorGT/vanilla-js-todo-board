@@ -17,3 +17,13 @@ body {
   border-bottom: 1px solid #cbd5e1;
   padding: 18px 24px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.board-header h1 {
+  font-size: 1.4rem;
+}
+

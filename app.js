@@ -16,3 +16,12 @@ var form = document.getElementById("add-card-form");
 var titleInput = document.getElementById("new-title");
 var priorityInput = document.getElementById("new-priority");
 var columnInput = document.getElementById("new-column");
+var searchInput = document.getElementById("search-input");
+var filterSelect = document.getElementById("priority-filter");
+var boardEl = document.querySelector(".board");
+
+function loadCards() {
+  try {
+    var saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      return JSON.parse(saved);
