@@ -25,3 +25,12 @@ function loadCards() {
     var saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
       return JSON.parse(saved);
+    }
+  } catch (err) {
+    console.log("could not read localStorage", err);
+  }
+  return defaultCards.slice();
+}
+
+function saveCards() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(cards));
