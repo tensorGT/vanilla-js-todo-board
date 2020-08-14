@@ -34,3 +34,12 @@ function loadCards() {
 
 function saveCards() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(cards));
+}
+
+function renderBoard() {
+  var searchText = searchInput.value.trim().toLowerCase();
+  var prioFilter = filterSelect.value;
+
+  COLUMNS.forEach(function (colName) {
+    var listEl = document.getElementById("list-" + colName);
+    var countEl = document.getElementById("count-" + colName);
