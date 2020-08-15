@@ -43,3 +43,12 @@ function renderBoard() {
   COLUMNS.forEach(function (colName) {
     var listEl = document.getElementById("list-" + colName);
     var countEl = document.getElementById("count-" + colName);
+    listEl.innerHTML = "";
+
+    var colCards = cards.filter(function (c) {
+      if (c.column !== colName) return false;
+      if (prioFilter !== "all" && c.priority !== prioFilter) return false;
+      if (searchText && c.title.toLowerCase().indexOf(searchText) === -1) return false;
+      return true;
+    });
+
