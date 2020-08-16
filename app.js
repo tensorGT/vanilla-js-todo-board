@@ -52,3 +52,12 @@ function renderBoard() {
       return true;
     });
 
+    countEl.textContent = colCards.length;
+
+    if (colCards.length === 0) {
+      var empty = document.createElement("p");
+      empty.className = "empty-msg";
+      empty.textContent = "No cards here";
+      listEl.appendChild(empty);
+      return;
+    }
