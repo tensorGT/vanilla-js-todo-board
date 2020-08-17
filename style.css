@@ -65,3 +65,13 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 22px;
+}
+
+.add-form input {
+  flex: 1 1 240px;
+}
+
+.add-form button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;

@@ -61,3 +61,13 @@ function renderBoard() {
       listEl.appendChild(empty);
       return;
     }
+
+    colCards.forEach(function (card) {
+      listEl.appendChild(createCardElement(card));
+    });
+  });
+}
+
+function createCardElement(card) {
+  var el = document.createElement("article");
+  el.className = "task-card";
