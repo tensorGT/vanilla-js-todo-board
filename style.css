@@ -75,3 +75,13 @@ body {
   background-color: #2563eb;
   color: #ffffff;
   border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  background-color: #1d4ed8;
+}
+

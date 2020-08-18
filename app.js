@@ -71,3 +71,12 @@ function renderBoard() {
 function createCardElement(card) {
   var el = document.createElement("article");
   el.className = "task-card";
+  el.draggable = true;
+  el.dataset.id = card.id;
+
+  var colIdx = COLUMNS.indexOf(card.column);
+
+  el.innerHTML =
+    '<div class="card-top">' +
+      '<span class="priority-tag prio-' + card.priority + '">' + card.priority + "</span>" +
+      '<button type="button" class="card-btn edit-btn">Edit</button>' +
