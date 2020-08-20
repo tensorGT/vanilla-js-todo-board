@@ -85,3 +85,13 @@ body {
   background-color: #1d4ed8;
 }
 
+/* columns */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.column {
+  background-color: #e2e8f0;

@@ -80,3 +80,12 @@ function createCardElement(card) {
     '<div class="card-top">' +
       '<span class="priority-tag prio-' + card.priority + '">' + card.priority + "</span>" +
       '<button type="button" class="card-btn edit-btn">Edit</button>' +
+    "</div>" +
+    '<p class="card-title"></p>' +
+    '<div class="card-actions">' +
+      "<div>" +
+        (colIdx > 0 ? '<button type="button" class="card-btn move-left">&larr;</button> ' : "") +
+        (colIdx < COLUMNS.length - 1 ? '<button type="button" class="card-btn move-right">&rarr;</button>' : "") +
+      "</div>" +
+      '<button type="button" class="card-btn delete-btn">Delete</button>' +
+    "</div>";
