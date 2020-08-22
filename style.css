@@ -95,3 +95,12 @@ body {
 
 .column {
   background-color: #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+  min-height: 360px;
+  transition: background-color 0.15s ease;
+}
+
+.column.drag-over {
+  background-color: #dbeafe;
+  outline: 2px dashed #2563eb;

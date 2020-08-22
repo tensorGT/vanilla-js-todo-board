@@ -89,3 +89,12 @@ function createCardElement(card) {
       "</div>" +
       '<button type="button" class="card-btn delete-btn">Delete</button>' +
     "</div>";
+
+  el.querySelector(".card-title").textContent = card.title;
+
+  // drag events
+  el.addEventListener("dragstart", function () {
+    draggedId = card.id;
+    el.classList.add("dragging");
+  });
+
