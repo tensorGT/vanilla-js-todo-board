@@ -104,3 +104,13 @@ body {
 .column.drag-over {
   background-color: #dbeafe;
   outline: 2px dashed #2563eb;
+}
+
+.col-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.col-header h2 {

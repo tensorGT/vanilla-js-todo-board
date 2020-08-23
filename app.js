@@ -98,3 +98,12 @@ function createCardElement(card) {
     el.classList.add("dragging");
   });
 
+  el.addEventListener("dragend", function () {
+    draggedId = null;
+    el.classList.remove("dragging");
+  });
+
+  return el;
+}
+
+// add new card
