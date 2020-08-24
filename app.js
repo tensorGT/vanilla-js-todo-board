@@ -107,3 +107,12 @@ function createCardElement(card) {
 }
 
 // add new card
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var title = titleInput.value.trim();
+  if (!title) return;
+
+  cards.push({
+    id: "c" + Date.now(),
+    title: title,
+    priority: priorityInput.value,
