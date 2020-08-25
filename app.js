@@ -116,3 +116,12 @@ form.addEventListener("submit", function (e) {
     id: "c" + Date.now(),
     title: title,
     priority: priorityInput.value,
+    column: columnInput.value
+  });
+
+  titleInput.value = "";
+  saveCards();
+  renderBoard();
+});
+
+// event delegation for edit, move, delete
