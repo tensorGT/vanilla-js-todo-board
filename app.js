@@ -125,3 +125,12 @@ form.addEventListener("submit", function (e) {
 });
 
 // event delegation for edit, move, delete
+boardEl.addEventListener("click", function (e) {
+  var btn = e.target.closest("button");
+  if (!btn) return;
+  var cardEl = btn.closest(".task-card");
+  if (!cardEl) return;
+
+  var id = cardEl.dataset.id;
+  var card = cards.find(function (c) { return c.id === id; });
+  if (!card) return;
