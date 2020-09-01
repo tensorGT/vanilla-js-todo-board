@@ -143,3 +143,13 @@ body {
 }
 
 .task-card.dragging {
+  opacity: 0.5;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+

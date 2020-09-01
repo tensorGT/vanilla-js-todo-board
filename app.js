@@ -134,3 +134,13 @@ boardEl.addEventListener("click", function (e) {
   var id = cardEl.dataset.id;
   var card = cards.find(function (c) { return c.id === id; });
   if (!card) return;
+
+  if (btn.classList.contains("delete-btn")) {
+    cards = cards.filter(function (c) { return c.id !== id; });
+    saveCards();
+    renderBoard();
+  } else if (btn.classList.contains("move-left")) {
+    var prevIdx = COLUMNS.indexOf(card.column) - 1;
+    if (prevIdx >= 0) {
+      card.column = COLUMNS[prevIdx];
+      saveCards();
