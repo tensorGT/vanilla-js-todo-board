@@ -153,3 +153,13 @@ body {
   margin-bottom: 8px;
 }
 
+.priority-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.prio-low {
+  background-color: #dcfce7;

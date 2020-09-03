@@ -144,3 +144,12 @@ boardEl.addEventListener("click", function (e) {
     if (prevIdx >= 0) {
       card.column = COLUMNS[prevIdx];
       saveCards();
+      renderBoard();
+    }
+  } else if (btn.classList.contains("move-right")) {
+    var nextIdx = COLUMNS.indexOf(card.column) + 1;
+    if (nextIdx < COLUMNS.length) {
+      card.column = COLUMNS[nextIdx];
+      saveCards();
+      renderBoard();
+    }
