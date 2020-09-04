@@ -153,3 +153,12 @@ boardEl.addEventListener("click", function (e) {
       saveCards();
       renderBoard();
     }
+  } else if (btn.classList.contains("edit-btn")) {
+    startInlineEdit(cardEl, card);
+  }
+});
+
+function startInlineEdit(cardEl, card) {
+  var titleP = cardEl.querySelector(".card-title");
+  if (!titleP) return;
+

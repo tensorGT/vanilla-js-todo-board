@@ -163,3 +163,12 @@ body {
 
 .prio-low {
   background-color: #dcfce7;
+  color: #166534;
+}
+
+.prio-medium {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.prio-high {
