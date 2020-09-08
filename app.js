@@ -162,3 +162,12 @@ function startInlineEdit(cardEl, card) {
   var titleP = cardEl.querySelector(".card-title");
   if (!titleP) return;
 
+  var input = document.createElement("input");
+  input.type = "text";
+  input.className = "edit-input";
+  input.value = card.title;
+  titleP.replaceWith(input);
+  input.focus();
+
+  function finishEdit() {
+    var updated = input.value.trim();

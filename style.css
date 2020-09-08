@@ -172,3 +172,13 @@ body {
 }
 
 .prio-high {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
