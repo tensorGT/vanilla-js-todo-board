@@ -182,3 +182,13 @@ body {
   margin-bottom: 10px;
   word-break: break-word;
 }
+
+.edit-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.92rem;
+  padding: 6px 8px;
+  border: 1px solid #2563eb;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

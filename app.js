@@ -171,3 +171,12 @@ function startInlineEdit(cardEl, card) {
 
   function finishEdit() {
     var updated = input.value.trim();
+    if (updated) {
+      card.title = updated;
+      saveCards();
+    }
+    renderBoard();
+  }
+
+  input.addEventListener("blur", finishEdit);
+  input.addEventListener("keydown", function (ev) {
