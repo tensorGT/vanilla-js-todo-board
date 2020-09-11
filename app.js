@@ -180,3 +180,12 @@ function startInlineEdit(cardEl, card) {
 
   input.addEventListener("blur", finishEdit);
   input.addEventListener("keydown", function (ev) {
+    if (ev.key === "Enter") {
+      finishEdit();
+    } else if (ev.key === "Escape") {
+      renderBoard();
+    }
+  });
+}
+
+// drag-and-drop on columns
