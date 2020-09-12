@@ -189,3 +189,12 @@ function startInlineEdit(cardEl, card) {
 }
 
 // drag-and-drop on columns
+document.querySelectorAll(".column").forEach(function (colEl) {
+  colEl.addEventListener("dragover", function (e) {
+    e.preventDefault();
+    colEl.classList.add("drag-over");
+  });
+
+  colEl.addEventListener("dragleave", function () {
+    colEl.classList.remove("drag-over");
+  });
