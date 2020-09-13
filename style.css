@@ -211,3 +211,13 @@ body {
   cursor: pointer;
 }
 
+.card-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.card-btn.delete-btn {
+  color: #dc2626;
+}
+
+.empty-msg {
+  font-size: 0.85rem;

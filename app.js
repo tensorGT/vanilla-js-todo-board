@@ -198,3 +198,12 @@ document.querySelectorAll(".column").forEach(function (colEl) {
   colEl.addEventListener("dragleave", function () {
     colEl.classList.remove("drag-over");
   });
+
+  colEl.addEventListener("drop", function (e) {
+    e.preventDefault();
+    colEl.classList.remove("drag-over");
+    if (!draggedId) return;
+
+    var card = cards.find(function (c) { return c.id === draggedId; });
+    if (card) {
+      card.column = colEl.dataset.col;
