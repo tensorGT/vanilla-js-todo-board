@@ -8,3 +8,4 @@ My first real JavaScript project! A Kanban board built with zero libraries.
 - Inline edit any card title (click Edit, press Enter to save)
 - Move cards by dragging and dropping OR clicking the arrow buttons
 - Filter by search text or priority
+- Saves everything in `localStorage` so refreshing doesn't wipe your board

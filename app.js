@@ -207,3 +207,13 @@ document.querySelectorAll(".column").forEach(function (colEl) {
     var card = cards.find(function (c) { return c.id === draggedId; });
     if (card) {
       card.column = colEl.dataset.col;
+      saveCards();
+      renderBoard();
+    }
+  });
+});
+
+searchInput.addEventListener("input", renderBoard);
+filterSelect.addEventListener("change", renderBoard);
+
+renderBoard();
